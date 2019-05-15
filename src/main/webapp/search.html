@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Patients</title>
+</head>
+
+<body>
+<div class="main">
+  <style>
+    h1{
+      text-decoration: overline;
+      text-transform: uppercase;
+      color: darkslateblue;
+      font-style: italic;
+      font-family: Arial;
+    }
+  </style>
+
+  <div style="text-align: center">
+    <h1>Search Patients</h1>
+    <p ><a href="index.html">Home</a>
+    <a href="statistics.html">Statistics</a>
+    </p>
+  </div>
+
+  <h2> Search By Any Category: </h2>
+  <form method="get" action="/runsearch.html">
+    <select name="type">
+      <option value="name">Name</option>
+      <option value="id">ID</option>
+      <option value="birthdate">Birthdate</option>
+      <option value="deathdate">Deathdate</option>
+      <option value="ssn">SSN</option>
+      <option value="drivers">Drivers</option>
+      <option value="passport">Passport</option>
+      <option value="prefix">Prefix</option>
+      <option value="suffix">Suffix</option>
+      <option value="maiden">Maiden</option>
+      <option value="marital">Marital</option>
+      <option value="race">Race</option>
+      <option value="ethnicity">Ethnicity</option>
+      <option value="gender">Gender</option>
+      <option value="birthplace">Birthplace</option>
+      <option value="address">Address</option>
+      <option value="city">City</option>
+      <option value="state">State</option>
+      <option value="zip">Zip</option>
+    </select>
+    <input type="text" name="keyword" placeholder="Enter value"/>
+    <input type="submit" value="Search"/>
+  </form>
+
+  <h2> Search By Multiple Categories: </h2>
+  <form method="get" action="/runsearch.html">
+    <select name="firsttype">
+      <option value="name">Name</option>
+      <option value="id">ID</option>
+      <option value="birthdate">Birthdate</option>
+      <option value="deathdate">Deathdate</option>
+      <option value="ssn">SSN</option>
+      <option value="drivers">Drivers</option>
+      <option value="passport">Passport</option>
+      <option value="prefix">Prefix</option>
+      <option value="suffix">Suffix</option>
+      <option value="maiden">Maiden</option>
+      <option value="marital">Marital</option>
+      <option value="race">Race</option>
+      <option value="ethnicity">Ethnicity</option>
+      <option value="gender">Gender</option>
+      <option value="birthplace">Birthplace</option>
+      <option value="address">Address</option>
+      <option value="city">City</option>
+      <option value="state">State</option>
+      <option value="zip">Zip</option>
+    </select>
+    <input type="text" name="firstkey" placeholder="Enter first value"/>
+    and
+    <select name="secondtype">
+      <option value="name">Name</option>
+      <option value="id">ID</option>
+      <option value="birthdate">Birthdate</option>
+      <option value="deathdate">Deathdate</option>
+      <option value="ssn">SSN</option>
+      <option value="drivers">Drivers</option>
+      <option value="passport">Passport</option>
+      <option value="prefix">Prefix</option>
+      <option value="suffix">Suffix</option>
+      <option value="maiden">Maiden</option>
+      <option value="marital">Marital</option>
+      <option value="race">Race</option>
+      <option value="ethnicity">Ethnicity</option>
+      <option value="gender">Gender</option>
+      <option value="birthplace">Birthplace</option>
+      <option value="address">Address</option>
+      <option value="city">City</option>
+      <option value="state">State</option>
+      <option value="zip">Zip</option>
+    </select>
+    <input type="text" name="secondkey" placeholder="Enter second value"/>
+    <input type="submit" value="Search"/>
+  </form>
+
+  <h2> Search By Age Range: </h2>
+  <form method="POST" action="/runSearchAge.html">
+    <input type="number" name="searchAgeMin" placeholder="Minimum Age"/>
+    to
+    <input type="number" name="searchAgeMax" placeholder="Maximum Age"/>
+    <input type="submit" value="Search"/>
+  </form>
+</div>
+</body>
+</html>
